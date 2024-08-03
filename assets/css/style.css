@@ -1,0 +1,340 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+/* ........... مربوط به هدر ........... */
+header {
+    height: 35px;
+    width: 100%;
+    background-image: linear-gradient(to left, #00052D, #494A67);
+    text-align: center;
+    padding-top: 10px;
+}
+header em {
+    font-size: large;
+    color:azure;
+}
+/* ........... مربوط به هدر ........... */
+/* ........... مربوط به مین ........... */
+#main-box {
+    display: flex;
+
+}
+/* ........... مربوط به مین ........... */
+/* ........... مربوط به منو ........... */
+#menu-nav {
+    height: 100vh;
+    width: 31%;
+    background-image: linear-gradient(to bottom right, #FF7278, #FFA35D);
+}
+#menu {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
+}
+.menu {
+    list-style-type: none;
+    height: 30px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.menu-tag {
+    text-decoration: none;
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style:inherit;
+    color: #4354d1;
+    transition: color 0.5s;
+}
+.menu-tag:hover {
+    
+    color: #ffffff;
+}
+.menu:hover {
+    background-color: #01122e;
+}
+/* ........... مربوط به منو ........... */
+/* ........... مربوط به هوم پیج ........... */
+.home-page {
+    height: 100vh;
+    width: 69%;
+    background-image: url(/assets/img/3.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+/* ...........کادر متن............... */
+.homepage-box {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+.title-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 700;
+    font-size: xx-large;
+    color: #ffffff;
+    text-shadow: 1px 0 2px yellow;
+}
+.h-font {
+    color: #ffffff;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 500;
+    text-shadow: 1px 0 2px yellow;  
+    margin-top: 16px;
+}
+.p-font {
+    color: #ffffff;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 300;
+    text-shadow: 1px 0 2px yellow;  
+    margin-top: 12px;
+}
+/* .......... مربوط به دکمه ........ */
+#login-clck {
+    margin-top: 48px;
+    padding: 12px 42px;
+    text-decoration: none;
+    background-color: #FEA355;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+
+}
+#login-clck:hover {
+    box-shadow: 0 12px 16px 0 rgba(119, 114, 114, 0.24),0 17px 50px 0 rgba(104, 100, 100, 0.19);
+}
+.login-clck {
+    text-decoration: none;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #4354d1;
+} 
+/* .......... مربوط به دکمه ........ */
+/* ...........کادر متن............... */
+/* ........... مربوط به هوم پیج ........... */
+
+/* ............. اسکرین گوشی ........... */
+@media screen and (max-width: 576px) {
+    #main-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #menu-nav {
+        height: 35px;
+        width: 100%;
+        
+    }
+    .home-page {
+        height: 100vh;
+        width: 100%;
+    }
+    #menu {
+        flex-direction: row;
+    }
+    .menu {
+        margin-top: -20px;
+    }
+    .menu-tag {
+        font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    .home-page {
+        background-size: cover;
+        background-position: center;
+    }
+    .homepage-box {
+        text-align: center;
+    }
+
+    #login-clck {
+         margin-top: 33px;
+        font-size: 12px;
+    }
+}
+/* ............. اسکرین گوشی ........... */
+
+/* ............ مربوط به لاگین پیچ ............ */
+/* ............. مربوط به بک گراند ........... */
+#login-page {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/img/1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+/* ............. مربوط به بک گراند ........... */
+/* ............. مربوط به باکس  ........... */
+#login-box {
+    margin-top: 57px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 549px;
+    width: 47%;
+    background-color: #2b0426b0;
+    box-shadow: 1px 1px 3px black;
+}
+/* ............. مربوط به باکس  ........... */
+/* ............. مربوط به متن باکس  ........... */
+#login-text {
+    font-size: xx-large;
+    color: #FFA35D;
+    margin-top: 27px;
+    margin-left: 40%;
+}
+/* ............. مربوط به متن باکس  ........... */
+/* ............. مربوط به اینپوتها  ........... */
+.input {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 11%;
+    
+
+}
+.label-font {
+    color: aliceblue;
+    font-size: larger;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+input {
+    margin-left: 15%;
+    width: 330px;
+    height: 25px;
+    border: 1px solid #37022c;
+}
+/* ............. مربوط به اینپوتها  ........... */
+/* ............. مربوط به ایمیل  ........... */
+.email-input {
+    margin-left: 126px;
+}
+/* ............. مربوط به ایمیل  ........... */
+/* ............. مربوط به پسوورد  ........... */
+.password-input {
+    width: 139px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border: 1px solid #FEA355;
+}
+.password-label {
+  font-size: medium;
+  font-style:initial;
+  color: #FEA355;
+}
+/* ............. مربوط به پسوورد  ........... */
+/* ............. مربوط به آدرس  ........... */
+.address-input {
+    margin-left: 107px;
+}
+/* ............. مربوط به آدرس  ........... */
+/* ............. مربوط به شماره  ........... */
+.phone-input {
+    margin-left: 55px;
+}
+/* ............. مربوط به شماره  ........... */
+/* ............. مربوط به تاریخ  ........... */
+.date-input {
+    margin-left: 67px;
+    text-align: center;
+}
+/* ............. مربوط به تاریخ  ........... */
+/* ............. مربوط به باتن  ........... */
+#button {
+    width: 100%;
+}
+.button {
+    background-color: #FEA355;
+    border: none;
+    padding: 10px 50px;
+    width: 80%;
+}
+.button:hover {
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0),0 17px 50px 0 rgb(78, 73, 73);
+} 
+.botton-font {
+    text-decoration: none;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: oblique;
+    font-size: large;
+    color: #37022c;
+}
+/* ............. مربوط به باتن  ........... */
+/* ............. اسکرین گوشی ........... */
+@media screen and (max-width: 576px) {
+    #login-box {
+        margin-top: 51px;
+        display: inline-block;
+        height: 410px;
+        width: 83%;
+        padding-top: 15px;
+    }
+    #login-text {
+        margin-left: 0px;
+        font-size: x-large;
+    }
+    .label-font {
+        font-size: medium;
+    }
+    input {
+        height: 17px;
+        margin-left: 4%;
+        width: 249px;
+    }
+    .email-font {
+        margin-right: 50px;
+    }
+    .email-input {
+        margin-left: 15px;
+    }
+    .password-input {
+        margin-left: 15px;
+        width: 249px;
+        border: 1px solid #37022c;
+    }
+    .password-label {
+        color: aliceblue;
+
+    }
+    .address-font {
+        margin-right: 50px;
+    }
+    .address-input {
+        margin-left: 15px;
+    }
+    .phone-input {
+        margin-left: 15px;
+    }
+    .date-input {
+        margin-left: 15px;
+    }
+    .button {
+        width: 76%;
+        margin-top: 4px;
+        margin-left: 26px;
+        padding: 2px 1px;
+    }
+    .botton-font {
+        font-size: small;
+    }
+}
+/* ............. اسکرین گوشی ........... */
